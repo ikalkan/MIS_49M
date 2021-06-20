@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <EditText
+        android:id="@+id/detayText"
+        android:layout_width="364dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="aciklama giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <EditText
+        android:id="@+id/isimText"
+        android:layout_width="296dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="isim giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/kaydetButonu"
+        android:layout_width="152dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="15dp"
+        android:onClick="kaydet"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="382dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="25dp"
+        android:onClick="fotoSec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/secim" />
+</androidx.constraintlayout.widget.ConstraintLayout>
